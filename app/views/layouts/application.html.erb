@@ -8,7 +8,9 @@
 	  <%= render 'layouts/shim' %>
 	</head>
 	<body>
+		<!-- render is Rails helper - looks for file app/views/layouts/_header.html.erb -->
 		<%= render 'layouts/header' %>
+		<!-- container has special meaning to Bootstrap -->
 		<div class="container">
 			<%= yield%>
 			<%= render 'layouts/footer' %>

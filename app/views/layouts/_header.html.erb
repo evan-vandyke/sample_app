@@ -1,8 +1,15 @@
+<!--header has three classes, and have special meaning to the
+  Bootstrap framework - all div classes also special to Bootstrap-->
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
+      <!-- link_to is Rails helper to create links
+      first argument is link text, the second the url,
+      third argument is an options hash, in this case adding
+      the CSS id logo to the sample app link -->
       <%= link_to "sample app", '#', id: "logo" %>
       <nav>
+        <!-- nav and pull-right have special meaning to Bootstrap-->
         <ul class="nav pull-right">
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "Help", help_path %></li>
